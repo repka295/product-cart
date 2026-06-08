@@ -13,7 +13,6 @@ body {
     gap: 45px;
     justify-content: center;
     width: 1110px;
-    border: 1px solid #515076;
 }
 
 .title {
@@ -22,22 +21,19 @@ body {
     line-height: 78px;
     margin: 0;
     text-align: center;
-    color: #515076
 }
 
 .description, .compound {
-    font-size: 13px;
     line-height: 18px;
-    color: #515076;
     margin: 0;
 }
 
 .product-card {
     width: 340px;
-
+    background: #F7F7FA;
 }
 
-span {
+.product-label {
     display: block;
     margin-top: 10px;
 }
