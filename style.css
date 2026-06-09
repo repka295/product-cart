@@ -12,7 +12,7 @@ body {
     flex-wrap: wrap;
     gap: 45px;
     justify-content: center;
-    width: 1110px;
+    width: 1280px;
 }
 
 .title {
@@ -31,9 +31,29 @@ body {
 .product-card {
     width: 340px;
     background: #F7F7FA;
+    padding: 10px;
 }
 
 .product-label {
     display: block;
     margin-top: 10px;
+}
+
+.product-price-label {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    width: 56px;
+    height: 24px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    width: 73px;
+    height: 24px;
+     margin-left: 150px
 }
