@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     color: #515076;
+    margin: 0;
 }
 
 .products-list {
@@ -52,5 +53,14 @@ body {
     font-weight: 700;
     line-height: 24px;
     margin: 0;
-    margin-left: 150px
+    margin-left: 150px;
+}
+div.container {
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
+    position: absolute;
+    width: 100%;;
+    z-index: -1;
 }
