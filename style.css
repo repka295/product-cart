@@ -53,14 +53,18 @@ body {
     font-weight: 700;
     line-height: 24px;
     margin: 0;
-    margin-left: 150px;
 }
-div.container {
+.container {
     background-image: url(images/bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #000000;
+    background-color: #ffffff;
     position: absolute;
-    width: 100%;;
+    width: 100%;
     z-index: -1;
+}
+.price-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
