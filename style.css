@@ -59,7 +59,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ffffff;
-    position: absolute;
     width: 100%;
     z-index: -1;
 }
