@@ -74,3 +74,15 @@ body {
 .product-card__compound-item {
     line-height: 18px;
 }
+.product-card.active {
+    background-color: #ffd54f;
+}
+
+.change-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.change-button.active {
+    background-color: #e91e63;
+}
