@@ -8,7 +8,7 @@ const allCards = document.querySelectorAll(".product-card");
 
 allCards.forEach(function (card) {
     card.style.border = "2px solid #4caf50";
-    });
+});
 
 console.log("Это сообщение в консоли.");
 alert("Это окно alert!");
@@ -25,4 +25,4 @@ button.classList.add("change-button");
 
 button.addEventListener("click", function () {
     button.classList.toggle("active");
-    });
+});
