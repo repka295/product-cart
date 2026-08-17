@@ -16,11 +16,12 @@ function checkSpeed(speed) {
 const product = "Груши";
 const price = 100;
 function buy(budget) {
-    if (budget >= price)
+    if (budget >= price){
         console.log(`${product} приобретён. Спасибо за покупку!`);
-    if (budget < price)
+    } else {
         const difference = price - budget;
-    console.log(`Вам не хватает ${difference}$, пополните баланс`);
+        console.log(`Вам не хватает ${difference}$, пополните баланс`);
+    }
 }
 function sayHello() {
     console.log("Привет!");
