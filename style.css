@@ -1,0 +1,88 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #515076;
+    margin: 0;
+}
+
+.products-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    width: 1280px;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 78px;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.product-card__description, .product-card__compound {
+    line-height: 18px;
+    margin: 0;
+}
+
+.product-card {
+    width: 340px;
+    background: #F7F7FA;
+    padding: 25px;
+}
+
+.product-card__label {
+    display: block;
+    margin-top: 10px;
+}
+
+.product-card__price-label {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+}
+
+.product-card__price {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+}
+.container {
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: -1;
+}
+.product-card__price-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-card__compound-list {
+    margin: 0;
+    padding-left: 18px;
+}
+.product-card__compound-item {
+    line-height: 18px;
+}
+.product-card.active {
+    background-color: #ffd54f;
+}
+
+.change-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.change-button.active {
+    background-color: #e91e63;
+}
