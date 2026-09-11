@@ -11,7 +11,7 @@ const car = {
   model: "X5",
   year: 2020,
   color: "black",
- type of gearbox: "automatic",
+ typeOfGearbox: "automatic",
 }
 
 const carOwner = {
@@ -21,8 +21,8 @@ const carOwner = {
 }
 
 function addMaxSpeed(car) {
-    if (!("максимальная скорость" in car)) {
-        car["максимальная скорость"] = 300;
+    if (!("max speed" in car)) {
+        car["max speed"] = 300;
     }
 }
 
@@ -39,23 +39,25 @@ const books = [
     { title: "Гордость и предубеждение", author: "Джейн Остин", year: 1813 },
 ];
 
-books.push(
+books.push({
     title: "Властелин колец",
     author: "Дж. Р. Р. Толкин",
     year: 1954
-);
+});
 
-const HarryPotterBooks = [
+const harrypotterbooks = [
     { title: "Гарри Поттер и философский камень", author: "Дж. К. Роулинг", year: 1997 },
     { title: "Гарри Поттер и Тайная комната", author: "Дж. К. Роулинг", year: 1998 },
     { title: "Гарри Поттер и узник Азкабана", author: "Дж. К. Роулинг", year: 1999 },
 ]
 
-const AllBooks = [...books, ...HarryPotterBooks];
+const allBooks = [...books, ...harrypotterbooks];
 
 function addRare(books) {
-      return books.map(function(book) {
-        book.isRare = book.year < 2000;
-        return book;
+      return books.map(book => {
+        return {
+            ...book,
+            isRare: book.year < 2000
+        };
     });
 }
