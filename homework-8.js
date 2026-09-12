@@ -21,8 +21,8 @@ const carOwner = {
 }
 
 function addMaxSpeed(car) {
-    if (!("max speed" in car)) {
-        car["max speed"] = 300;
+    if (!("maxSpeed" in car)) {
+        car["maxSpeed"] = 300;
     }
 }
 
@@ -45,13 +45,13 @@ books.push({
     year: 1954
 });
 
-const harrypotterbooks = [
+const harryPotterBooks = [
     { title: "Гарри Поттер и философский камень", author: "Дж. К. Роулинг", year: 1997 },
     { title: "Гарри Поттер и Тайная комната", author: "Дж. К. Роулинг", year: 1998 },
     { title: "Гарри Поттер и узник Азкабана", author: "Дж. К. Роулинг", year: 1999 },
 ]
 
-const allBooks = [...books, ...harrypotterbooks];
+const allBooks = [...books, ...harryPotterBooks];
 
 function addRare(books) {
       return books.map(book => {
