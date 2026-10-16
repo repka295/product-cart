@@ -3,20 +3,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const lowerNumbers = numbers.filter(num => num >= 5);
 console.log(lowerNumbers);
 
-const books = [
-    {
-        title: "1984",
-    },
-    {
-        title: "Гарри Поттер и философский камень",
-    },
-    {
-        title: "Великий Гэтсби",
-    },
-    {
-        title: "Война и мир",
-    }
-]
+const books = ['1984', 'Гарри Поттер и философский камень', 'Великий Гэтсби', 'Война и мир'];
 function checkBooks(books) {
     return books.includes("1984");
 }
@@ -25,8 +12,8 @@ const romanBooks = checkBooks(books);
 
 console.log(romanBooks);
 
-numbers.reverse();
-books.reverse();
+reverseArray(books);
+reverseArray(numbers);
 
 const filteredComments = comments.filter(comment => comment.email.includes('.com'));
 console.log(filteredComments);
