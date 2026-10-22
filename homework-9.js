@@ -1,3 +1,4 @@
+import comments from './comments.js';
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const lowerNumbers = numbers.filter(num => num >= 5);
@@ -8,12 +9,16 @@ function checkBooks(books) {
     return books.includes("1984");
 }
 
+function reverseArray(arr) {
+    return arr.reverse();
+}
+
 const romanBooks = checkBooks(books);
 
 console.log(romanBooks);
 
-reverseArray(books);
-reverseArray(numbers);
+console.log(reverseArray(books));
+console.log(reverseArray(numbers));
 
 const filteredComments = comments.filter(comment => comment.email.includes('.com'));
 console.log(filteredComments);
